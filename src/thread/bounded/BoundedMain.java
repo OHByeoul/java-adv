@@ -11,10 +11,12 @@ public class BoundedMain {
         // 1. BoundedQueue 선택
 //        BoundedQueue queue = new BoundedQueueV1(2);
 //        BoundedQueue queue = new BoundedQueueV2(2);
-        BoundedQueue queue = new BoundedQueueV3(2);
+//        BoundedQueue queue = new BoundedQueueV3(2);
+//        BoundedQueue queue = new BoundedQueueV4(2);
+        BoundedQueue queue = new BoundedQueueV5(2);
         //2. 생산자 소비자 실행순서선택 반드시 하나만
         producerFirst(queue);
-        consumerFirst(queue);
+//        consumerFirst(queue);
     }
 
     private static void consumerFirst(BoundedQueue queue) {
